@@ -5,13 +5,31 @@
         <title>My Web Page</title>
     </head>
     <body>
-        <h1>Simple Photobooth Project</h1>
+        <div> 
+            
+        </div>
+        <h1>Lime 4 Cunt</h1>
         <p>This is a simple photobooth project built with HTML, CSS, and JavaScript.</p>
-        <video id="video" width="640" height="480" autoplay></video>
+        <div class="page-container">
+            <aside class="sidebar">
+                <video id="video" width="500" height="375" autoplay></video>
+                <br>
+                <button id="snap">Take Photo</button>
+                <p id="counter"></p>
+            </aside>
+            
+            
+            <main class="canvas-area">
+                <canvas id="canvas" width="600" height="1800"></canvas>
+            </main>
+            
+        </div>
+        
+        
+       
+        
 
-        <button id="snap">Take Photo</button>
-
-        <canvas id="canvas" width="640" height="480"></canvas>
+        
 
         
         <script src="myscripts.js"></script>

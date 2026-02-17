@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 190, 212);
+  color: rgba(240, 157, 173);
+  align-items: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.page-container {
+  display: flex;
+  
+  overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+.sidebar {
+  width: 50%; /* Fixed width for your controls */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.sidebar video {
+  width: 100%; /* Fits the 300px width */
+  border-radius: 8px;
+}
+
+.canvas-area {
+  flex: 1; /* Grows to fill the rest of the screen */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+canvas {
+  /* This makes the canvas responsive */
+  width: auto; 
+  height: auto;
+  
+  /* Limits the height so it fits on a phone screen without scrolling */
+  max-height: 90vh; 
+  
+  /* Maintains the 1:3 ratio based on the height */
+  aspect-ratio: 1 / 3;
+  background-color: white;
+}
